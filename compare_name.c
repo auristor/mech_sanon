@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019-2020, AuriStor, Inc.
+ * Copyright (c) 2019-2024, AuriStor, Inc.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -33,8 +33,8 @@
 
 OM_uint32 GSSAPI_CALLCONV
 gss_compare_name(OM_uint32 *minor,
-		 gss_name_t name1,
-		 gss_name_t name2,
+		 gss_name_t name1 __attribute__((__unused__)),
+		 gss_name_t name2 __attribute__((__unused__)),
 		 int *name_equal)
 {
     *minor = 0;
